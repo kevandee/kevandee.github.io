@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    width: 80%;
+    height: 100%;
+    margin:auto auto;
+    background-color:rgb(90, 188, 253);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background-image: url(https://wallpaperaccess.com/full/1428486.jpg);
+    text-align: center;
+    color: white;
+}
+
+header .container {
+    padding: 150px 0px;
+}
+
+header .title {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: rgba(90, 188, 253, 0.562);
+}
+
+header h2 {
+    margin-top: 15px;
+}
+
+
+nav ul {
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+}
+
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+main .container{
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+}
+
+main .end {
+    padding: 10px 45px;
+}
+
+main p {
+    margin-top: 25px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #555;
+    text-align: center;
+    padding: 15px;
+    color:#eff7ffb0;
+}
+
+footer .container div {
+    margin-bottom: 5px;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+}
+
+footer li {
+    display: inline;
+    padding: 3px;
+    padding-left: 8px;
+    border-left: 1px solid black;
+}
+
+footer li:first-child {
+    border-left: none;
+}
