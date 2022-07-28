@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+
+    color: rgb(75, 73, 73);
+}
+
+.bg-image {
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_41/3044431/191009-family-vacation-beach-stock-cs-730a.jpg");
+    filter: blur(8px);
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_container {
+    position: absolute;
+    top: 60px; 
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 80%;
+    min-width: 710px;
+    max-width: 820px;
+    height: 80%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+
+.left {
+    width:25%;
+    height:100%;
+    background-color:rgba(128, 128, 128, 0.534);
+}
+
+.right {
+    width:75%;
+    height: 100%;
+    background-color:rgba(211, 211, 211, 0.473);
+}
+
+header {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+}
+
+#step {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#current_box_arrow {
+    width: 15px;
+    height: 15px;
+
+    margin: -7px auto;
+    transform: translate(-50%, 0);
+}
+
+#current_box_arrow div {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+    border-bottom: 15px solid white;
+}
+
+header .left {
+    position: relative;
+    border-radius: 5px 0 0 0;
+}
+
+header .right {
+    border-radius: 0 5px 0 0;
+}
+
+header .left .view {
+    display: block;
+    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+header .left .view div:nth-child(2) {
+    margin-top: 10px;
+}
+
+header .left .download_arrow {
+    position:absolute;
+    left: -35px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    width: 70px;
+    height: 70px;
+
+    background-color: red;
+    border-radius: 10px;
+
+    z-index: 2;
+}
+
+header .left a {
+    text-decoration: none;
+}
+
+.download_arrow img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .right .container {
+    display: block;
+}
+
+
+.boxes .step_image {
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+}
+
+.boxes .step_image.checked {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Eo_circle_green_checkmark.svg");
+}
+
+.boxes .step_image.cross {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cc/Cross_red_circle.svg");
+}
+
+.boxes, 
+.step_descriptions {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.boxes {
+    width: 100%;
+    height: 100px;
+}
+
+.step_box div {
+    margin-top: 20px;
+}
+
+.step_box.active {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main {
+    width: 100%;
+    height: 60%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+
+main .container {
+    position: absolute;
+    left: -25px;
+    width: calc(100% + 100px);
+}
+
+main .left {
+    border-radius: 5px 0 0 5px;
+    background-image: url("res/map.jpg");
+}
+
+main .right {
+    border-radius: 0 5px 5px 0;
+    width: 70%;
+    background-color: white;
+}
+
+input {
+    height: 40px;
+    font-size: 24px;
+    padding-left: 5px;
+
+    border: none;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.right .search_div {
+    width: 100%;
+    height: 150px; 
+}
+
+.right .search_div div {
+    margin-top: 15px;
+}
+
+.right .search_div div:first-child {
+    margin-top: 45px;
+} 
+
+
+.right .result_div {
+    display: flex;
+    justify-content:space-around;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: rgb(231, 226, 226);
+}
+
+.right .result_div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.right .city_box * {
+    margin-top: 15px;
+}
+.right .city_box {
+    color: gray;
+}
+
+.right .city_box.central div:last-child span {
+    font-weight: 600;
+    font-size: 17px;
+    color: rgb(54, 54, 54);
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+    display: block;
+    clear: both;
+    color: rgb(209, 209, 209);
+}
+
+footer .left {
+    border-radius: 0 0 0 5px;
+}
+
+footer .right {
+    border-radius: 0 0 5px 0;
+    text-align: center;
+}
+
+footer .right div {
+    height: 50%;
+}
+
+footer .up {
+    display: flex;
+    font-size: 13px;
+}
+
+footer .up div{
+    margin: auto;
+}
+
+
+footer button {
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 3px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(73, 73, 73);
+}
+
+footer button:disabled,
+footer button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+footer button:active {
+	position:relative;
+	top:1px;
+}
+
+footer .copyright {
+    border-top: 2px solid rgb(185, 185, 185);
+    padding-top: 25px;
+}
