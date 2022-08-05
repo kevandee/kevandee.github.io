@@ -5,13 +5,7 @@ function circleArray() {
             arr.push(data);
         }
         this.get = function(ind) {
-            while (ind >= arr.length) {
-                ind -= arr.length;
-            }
-            while (ind < 0) {
-                ind += arr.length;
-            }
-            return arr[ind];
+            return arr[(ind % arr.length + arr.length) % arr.length];
         }
     }
     else {
