@@ -33,10 +33,10 @@
 				<body>
 			`);
 			showChildNodes(document.documentElement, wnd.document);
-			wnd.document.write(
-				'</' + 'body>'+
-				'</' + 'html>'
-			);
+			wnd.document.write(`
+				</body>
+				</html>
+			`);
 		}
 		
 	</script>
